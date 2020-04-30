@@ -18,7 +18,10 @@ export class CountDownTimer extends React.Component {
       const countdownDate = moment(new Date("05/30/2020"));
       const now = moment().format();
       const diffDuration = moment.duration(countdownDate.diff(now));
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5d087253192146ffb7bfc3b5d4170d1444da86f9
       const days =
         countdownDate.diff(now, "days") < 10
           ? "0" + countdownDate.diff(now, "days")
@@ -35,10 +38,15 @@ export class CountDownTimer extends React.Component {
         diffDuration.seconds() < 10
           ? "0" + diffDuration.seconds()
           : diffDuration.seconds();
+<<<<<<< HEAD
 
       this.setState({ days, hours, minutes, seconds });
 
       // display Timer Expired text when count down ends
+=======
+      this.setState({ days, hours, minutes, seconds });
+
+>>>>>>> 5d087253192146ffb7bfc3b5d4170d1444da86f9
       if (diffDuration < 0) {
         clearInterval(interval);
         this.setState({
@@ -61,7 +69,11 @@ export class CountDownTimer extends React.Component {
         {timer ? (
           timer
         ) : (
+<<<<<<< HEAD
           <div className="c-countdown" data-testid="c-countdown">
+=======
+          <div className="c-countdown">
+>>>>>>> 5d087253192146ffb7bfc3b5d4170d1444da86f9
             <div className="c-countdown-item">
               <h3>
                 <span>{days.toString()[0]}</span>
