@@ -1,0 +1,60 @@
+.c-countdown-timer-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.c-countdown-timer--drop-text {
+  font-size: 2.2rem;
+}
+
+h1 {
+  font-size: 3.125rem;
+}
+
+.c-countdown {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.c-countdown-item {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 5px;
+  height: 100px;
+}
+
+.c-countdown-item h3 {
+  color: #fff;
+}
+
+.c-countdown-item h3 span {
+  background-color: #000;
+  margin: 5px 5px 10px 5px;
+  padding: 3px 12px;
+  min-width: 35px;
+  display: inline-block;
+}
+
+.c-countdown-item p {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .c-countdown-timer-wrapper {
+    left: 30%;
+    top: 50%;
+    margin-top: -100px;
+  }
+
+  .c-countdown-timer--drop-text {
+    font-size: 1rem;
+  }
+}
